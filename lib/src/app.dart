@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:playground/src/implisit_animation.dart';
+import 'package:playground/src/views/home_screen.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -20,7 +21,14 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
+      home: const HomeScreen(),
+    );
+  }
+}
+
+
+/*
+home: Scaffold(
         body: Center(
           child: GestureDetector(
             onTap: () {
@@ -35,6 +43,4 @@ class _MyAppState extends State<MyApp> {
           ),
         ),
       ),
-    );
-  }
-}
+*/
